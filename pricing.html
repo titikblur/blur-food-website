@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing & Order - blur_food</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">blur_food</span>
+                <span class="logo-sub">🍜</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#portfolio">Portfolio</a>
+                <a href="pricing.html" class="active">Pricing & Order</a>
+                <a href="#contact" class="cta-nav">Contact</a>
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Pricing Header -->
+    <section class="pricing-header">
+        <div class="container">
+            <h1>Transparent Pricing</h1>
+            <p>Filter leads efficiently. Check requirements first, then contact us via WhatsApp.</p>
+            <div class="alert">
+                <i class="fas fa-info-circle"></i>
+                <p>All prices in Indonesian Rupiah (IDR). Production timeline: 6 days standard + revision days.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section class="pricing-plans">
+        <div class="container">
+            <div class="plans-grid">
+                <!-- Basic Plan -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Basic</h3>
+                        <div class="price">IDR 1,500,000</div>
+                        <p class="plan-desc">Perfect for single content promotion</p>
+                    </div>
+                    <div class="plan-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>1 Content Creation</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>1 Platform (Choose: TikTok/Instagram/YouTube)</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Standard Scripting & Production</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>1 Minor Revision Included</span>
+                        </div>
+                    </div>
+                    <button class="select-plan" data-plan="basic" data-price="1500000">
+                        Select Basic Plan
+                    </button>
+                </div>
+
+                <!-- Plus Plan -->
+                <div class="plan-card popular">
+                    <div class="popular-badge">MOST POPULAR</div>
+                    <div class="plan-header">
+                        <h3>Plus</h3>
+                        <div class="price">IDR 2,000,000</div>
+                        <p class="plan-desc">Ideal for multi-platform campaigns</p>
+                    </div>
+                    <div class="plan-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>2 Content Creations</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>2 Platforms (Choose any two)</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Enhanced Scripting & Production</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>2 Minor Revisions Included</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Priority Scheduling</span>
+                        </div>
+                    </div>
+                    <button class="select-plan" data-plan="plus" data-price="2000000">
+                        Select Plus Plan
+                    </button>
+                </div>
+
+                <!-- Custom Plan -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Custom</h3>
+                        <div class="price">Contact</div>
+                        <p class="plan-desc">For large campaigns & special requirements</p>
+                    </div>
+                    <div class="plan-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>3+ Content Creations</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>All Platforms Included</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Custom Scripting & Strategy</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Unlimited Revisions</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Dedicated Account Manager</span>
+                        </div>
+                    </div>
+                    <button class="select-plan" data-plan="custom" data-price="0">
+                        Contact for Custom Plan
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add-ons Section -->
+    <section class="addons">
+        <div class="container">
+            <h2 class="section-title">Additional Services</h2>
+            <p class="section-subtitle">Enhance your package with these add-ons</p>
+            
+            <div class="addons-grid">
+                <div class="addon-card">
+                    <h4>Mirror All 3 Platforms</h4>
+                    <p class="addon-price">IDR 15,000</p>
+                    <p>Post same content on TikTok, Instagram & YouTube</p>
+                    <button class="add-to-cart" data-addon="mirror" data-price="15000">
+                        Add to Cart
+                    </button>
+                </div>
+                
+                <div class="addon-card">
+                    <h4>Boost Code TikTok 30 Days</h4>
+                    <p class="addon-price free">FREE</p>
+                    <p>30-day TikTok boost code for increased visibility</p>
+                    <button class="add-to-cart" data-addon="boost30" data-price="0">
+                        Add to Cart
+                    </button>
+                </div>
+                
+                <div class="addon-card">
+                    <h4>Boost Code TikTok 365 Days</h4>
+                    <p class="addon-price">IDR 15,000</p>
+                    <p>1-year TikTok boost code for maximum exposure</p>
+                    <button class="add-to-cart" data-addon="boost365" data-price="15000">
+                        Add to Cart
+                    </button>
+                </div>
+                
+                <div class="addon-card">
+                    <h4>Keranjang Kuning</h4>
+                    <p class="addon-price free">FREE</p>
+                    <p>TikTok shopping cart feature enabled</p>
+                    <button class="add-to-cart" data-addon="keranjang" data-price="0">
+                        Add to Cart
+                    </button>
+                </div>
+                
+                <div class="addon-card">
+                    <h4>Owning</h4>
+                    <p class="addon-price free">FREE</p>
+                    <p>Content ownership rights included</p>
+                    <button class="add-to-cart" data-addon="owning" data-price="0">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart & Order Form -->
+    <section class="order-form">
+        <div class="container">
+            <h2 class="section-title">Your Order Summary</h2>
+            
+            <div class="order-container">
+                <div class="cart-summary">
+                    <h3>Cart Summary</h3>
+                    <div id="cart-items">
+                        <p class="empty-cart">No items selected yet</p>
+                    </div>
+                    <div class="cart-total">
+                        <div class="total-line">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">IDR 0</span>
+                        </div>
+                        <div class="total-line">
+                            <span>Add-ons:</span>
+                            <span id="addons-total">IDR 0</span>
+                        </div>
+                        <div class="total-line grand-total">
+                            <span>Total:</span>
+                            <span id="grand-total">IDR 0</span>
+                        </div>
+                    </div>
+                    
+                    <button id="clear-cart" class="btn-secondary">
+                        <i class="fas fa-trash"></i> Clear Cart
+                    </button>
+                </div>
+                
+                <div class="customer-info">
+                    <h3>Customer Information</h3>
+                    <p class="form-note">All fields are required for endorsement processing</p>
+                    
+                    <form id="order-form">
+                        <div class="form-group">
+                            <label for="agency">
+                                <i class="fas fa-building"></i> Agency/Company Name *
+                            </label>
+                            <input type="text" id="agency" required placeholder="Enter your agency or company name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="brand">
+                                <i class="fas fa-tag"></i> Brand to Endorse *
+                            </label>
+                            <input type="text" id="brand" required placeholder="Enter brand/product name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-person">
+                                <i class="fas fa-user"></i> Contact Person *
+                            </label>
+                            <input type="text" id="contact-person" required placeholder="Your name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i> Email Address *
+                            </label>
+                            <input type="email" id="email" required placeholder="your@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="notes">
+                                <i class="fas fa-sticky-note"></i> Additional Notes
+                            </label>
+                            <textarea id="notes" rows="3" placeholder="Any special requirements or notes..."></textarea>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" id="preview-wa" class="btn-secondary">
+                                <i class="fas fa-eye"></i> Preview WhatsApp Message
+                            </button>
+                            <button type="submit" id="submit-order" class="btn-primary" disabled>
+                                <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms & Conditions -->
+    <section class="terms">
+        <div class="container">
+            <h2 class="section-title">Endorsement Terms & Conditions</h2>
+            
+            <div class="terms-content">
+                <div class="term-item">
+                    <h4><i class="fas fa-clock"></i> Production Timeline</h4>
+                    <p>Standard production requires 6 days: 2 days scripting, 2 days shooting, 2 days editing.</p>
+                </div>
+                
+                <div class="term-item">
+                    <h4><i class="fas fa-sync-alt"></i> Revision Policy</h4>
+                    <p>Minor revisions: 1-2 days depending on quantity. Major revisions requiring retakes: Return to initial 6-day production timeline.</p>
+                </div>
+                
+                <div class="term-item">
+                    <h4><i class="fas fa-calendar-alt"></i> Scheduling</h4>
+                    <p>Production starts upon 50% deposit payment. Final delivery after remaining 50% payment.</p>
+                </div>
+                
+                <div class="term-item">
+                    <h4><i class="fas fa-file-contract"></i> Content Rights</h4>
+                    <p>Brand receives usage rights for promoted content. blur_food retains creative copyright.</p>
+                </div>
+                
+                <div class="term-item">
+                    <h4><i class="fas fa-ban"></i> Cancellation Policy</h4>
+                    <p>50% deposit non-refundable if cancellation occurs after production has started.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>blur_food</h3>
+                    <p>Anonymous Food Content Creator</p>
+                    <p>🍜 Let the food speak for itself</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="index.html#portfolio">Portfolio</a>
+                    <a href="pricing.html">Pricing</a>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact for Endorsement</h4>
+                    <p><i class="fab fa-whatsapp"></i> 0852 3260 2370</p>
+                    <p>Please use website ordering system first</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 blur_food. All rights reserved.</p>
+                <p>Website designed to minimize leads & streamline collaboration</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Preview Modal -->
+    <div id="wa-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>WhatsApp Message Preview</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="wa-preview">
+                    <p id="wa-message-content">Your message will appear here...</p>
+                </div>
+                <div class="modal-actions">
+                    <button id="copy-wa" class="btn-secondary">
+                        <i class="fas fa-copy"></i> Copy Message
+                    </button>
+                    <button id="send-wa" class="btn-primary">
+                        <i class="fab fa-whatsapp"></i> Open WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
